@@ -38,7 +38,6 @@ h1 {
   font-size: 48px;
   color: aqua;
   font-weight: bold;
-  
 }
 
 button {
@@ -71,4 +70,19 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+/* Styling for the welcome page done by meg*/
+.welcomepageNav {
+  width: 100%;
+  background-color: #2a5c82;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.welcomePageHero {
+  background-color: #2a5c82;
+  color: white;
+  text-align: center;
+  height: 32rem;
 }
