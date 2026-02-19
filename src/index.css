@@ -208,3 +208,89 @@ body {
   justify-content: space-around;
   margin-bottom: 1rem;
 }
+
+.signinDashBorad {
+  height: 100vh;
+  width: 100%;
+  background-color: #f8fafc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* align-items: center; */
+}
+
+.SigninSvgDiv {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 10px;
+  background-color: #2a5c82;
+  margin-left: 15rem;
+  margin-bottom: 1rem;
+}
+.signinSubDashBoard {
+  text-align: center;
+}
+.signinPTag {
+  font-size: 0.8rem;
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 3rem;
+  color: #94a3b8;
+}
+.signinFormWrapper {
+  /* height: 30rem; */
+  width: 35rem;
+  border-radius: 20px;
+  background-color: white;
+  color: #64748b;
+  text-align: left;
+  padding: 2rem;
+}
+
+.signinIput {
+  width: 90%;
+  height: 3rem;
+  border-radius: 10px;
+  border: none;
+  background-color: #f8fafc;
+  padding: 1rem;
+}
+.signinLables {
+  margin-top: 3rem;
+}
+
+.signinButton {
+  width: 80%;
+  height: 3rem;
+  border-radius: 15px;
+  background-color: #2a5c82;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+}
+
+.singinforgotpassword {
+  text-align: right;
+  font-size: 0.7rem;
+  font-weight: bold;
+  margin-right: 3rem;
+}
+
+.signinOptions {
+  margin-top: 3rem;
+  color: #64748b;
+}
+
+.siginoptions {
+  border: none;
+  background-color: none;
+  color: #2a5c82;
+  font-weight: bold;
+}
+
+.signinComplaince {
+  font-size: 0.7rem;
+  margin-top: 3rem;
+  font-weight: 100;
+}
