@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useAuth } from "../context/AuthContext";
 import { getDashboardPath } from "../components/ProtectedRoute";
+import { MdOutlineVaccines } from "react-icons/md";
 
 export default function Signin() {
   const apiURL = import.meta.env.VITE_REACT_APP_BASE_URL;
@@ -53,7 +54,9 @@ export default function Signin() {
   return (
     <div className="signinDashBorad">
       <div className="signinSubDashBoard">
-        <div className="SigninSvgDiv"></div>
+        <div className="SigninSvgDiv">
+          <MdOutlineVaccines color="#FFFFFF" size={40} />
+        </div>
         <h1>MedStock AI</h1>
         <p className="signinPTag">INVENTORY SYSTEM</p>
 

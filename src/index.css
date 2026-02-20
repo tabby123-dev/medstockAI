@@ -1,4 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 /* Styling for the welcome page done by meg*/
+
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +13,10 @@ html {
 }
 
 body {
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
   background: #f7f9fc;
   overflow-x: hidden;
 }
@@ -45,7 +51,12 @@ body {
   color: white;
   font-size: 1rem;
 }
-
+.navMedstock {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 10rem;
+}
 .welcomePageHero {
   background-color: #2a5c82;
   padding-top: 4rem;
@@ -84,6 +95,9 @@ body {
   padding-top: 0.5rem;
 }
 .smartSectionImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 3rem;
   width: 3rem;
   background-color: lightgreen;
@@ -107,6 +121,9 @@ body {
   gap: 1rem;
 }
 .aiImageDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 3rem;
   width: 3rem;
   background-color: lightblue;
@@ -118,6 +135,9 @@ body {
 .aiImageDiv2 {
   height: 3rem;
   width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: lightpink;
   border-radius: 10px;
   margin-top: 2rem;
@@ -208,6 +228,7 @@ body {
   justify-content: space-around;
   margin-bottom: 1rem;
 }
+/*sign in css*/
 
 .signinDashBorad {
   height: 100vh;
@@ -220,11 +241,14 @@ body {
 }
 
 .SigninSvgDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 4rem;
   width: 4rem;
   border-radius: 10px;
   background-color: #2a5c82;
-  margin-left: 15rem;
+  margin-left: 12rem;
   margin-bottom: 1rem;
 }
 .signinSubDashBoard {
@@ -238,13 +262,13 @@ body {
   color: #94a3b8;
 }
 .signinFormWrapper {
-  /* height: 30rem; */
-  width: 35rem;
+  height: 30rem;
+  width: 29rem;
   border-radius: 20px;
   background-color: white;
   color: #64748b;
   text-align: left;
-  padding: 2rem;
+  padding: 3rem 2rem 3rem 4rem;
 }
 
 .signinIput {

@@ -1,13 +1,18 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { FaArrowTrendUp } from "react-icons/fa6";
+import { HiMiniBellAlert } from "react-icons/hi2";
+import { FaFileCircleCheck } from "react-icons/fa6";
+import { RiFolder2Fill } from "react-icons/ri";
 
 const Welcome = () => {
   const navigate = useNavigate();
   return (
     <>
       <nav className="welcomepageNav">
-        <div>
-          <h3>MedStock AI</h3>
+        <div className="navMedstock">
+          <RiFolder2Fill size={25} />
+          <h3 className="navh3">MedStock AI</h3>
         </div>
         <div>
           <button
@@ -40,7 +45,7 @@ const Welcome = () => {
       </div>
       <section className="smartSection">
         <div className="smartSectionImage">
-          <img src="../" alt="" />
+          <FaFileCircleCheck color="#FFFFFF" size={25} />
         </div>
         <h2 className="smartSectionH2">Smart Inventory Tracking</h2>
         <p>
@@ -51,14 +56,14 @@ const Welcome = () => {
       <section className="secondSection">
         <div className="forcastDiv">
           <div className="aiImageDiv">
-            <img src="" alt="" />
+            <FaArrowTrendUp color="#2A5C82" size={30} />
           </div>
           <h3>AI Forecasts</h3>
           <p>Predict demand spikes</p>
         </div>
         <div className="stocks">
           <div className="aiImageDiv2">
-            <img src="" alt="" />
+            <HiMiniBellAlert color="#DC2626" size={30} />
           </div>
           <h3>Stock Alerts</h3>
           <p>Never run out of stock</p>
