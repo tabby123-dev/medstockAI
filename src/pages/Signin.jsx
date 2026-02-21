@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useAuth } from "../context/AuthContext";
 import { getDashboardPath } from "../components/ProtectedRoute";
+import { MdOutlineVaccines } from "react-icons/md";
 
 export default function Signin() {
   const apiURL = import.meta.env.VITE_REACT_APP_BASE_URL;
@@ -42,7 +43,6 @@ export default function Signin() {
       login(accessToken, user);
 
       navigate(getDashboardPath(user.role), { replace: true });
-      
     } catch (error) {
       console.error(error);
       setErrorMessage("Login failed. Please check your credentials.");
@@ -52,40 +52,60 @@ export default function Signin() {
   };
 
   return (
-    <div>
-      <h1>Sign In</h1>
-
-      <form onSubmit={onSubmit}>
-        <div>
-          <label htmlFor="email">Email</label>
-          <input
-            id="email"
-            name="email"
-            type="email"
-            value={email}
-            onChange={handleChange}
-            required
-          />
+    <div className="signinDashBorad">
+      <div className="signinSubDashBoard">
+        <div className="SigninSvgDiv">
+          <MdOutlineVaccines color="#FFFFFF" size={40} />
         </div>
+        <h1>MedStock AI</h1>
+        <p className="signinPTag">INVENTORY SYSTEM</p>
 
-        <div>
-          <label htmlFor="password">Password</label>
-          <input
-            id="password"
-            name="password"
-            type="password"
-            value={password}
-            onChange={handleChange}
-            required
-          />
+        <div className="signinFormWrapper">
+          <form onSubmit={onSubmit}>
+            <div>
+              <label htmlFor="email">EMAIL ADDRESS</label> <br />
+              <input
+                className="signinIput"
+                placeholder="MANAGER@HOSPITAL.COM"
+                id="email"
+                name="email"
+                type="email"
+                value={email}
+                onChange={handleChange}
+                required
+              />
+            </div>
+
+            <div className="signinLables">
+              <label htmlFor="password">PASSWORD</label> <br />
+              <input
+                className="signinIput"
+                placeholder="........"
+                id="password"
+                name="password"
+                type="password"
+                value={password}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <p className="singinforgotpassword">FORGOT PASSWORD?</p>
+
+            {errorMessage && <p style={{ color: "red" }}>{errorMessage}</p>}
+
+            <button type="submit" disabled={loading} className="signinButton">
+              {loading ? "Signing in…" : "Sign In"}
+            </button>
+          </form>
         </div>
-
-        {errorMessage && <p style={{ color: "red" }}>{errorMessage}</p>}
-
-        <button type="submit" disabled={loading}>
-          {loading ? "Signing in…" : "Sign In"}
-        </button>
-      </form>
+        <p className="signinOptions">
+          Don't have an account?{" "}
+          <span>
+            <button className="siginoptions">Sign up</button>
+          </span>
+        </p>
+        <p className="signinComplaince">HIPAA Compliant SSL Secured</p>
+      </div>
     </div>
   );
 }
