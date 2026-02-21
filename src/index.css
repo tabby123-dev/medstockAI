@@ -15,7 +15,6 @@ html {
 body {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  /* font-weight: <weight>; */
   font-style: normal;
   background: #f7f9fc;
   overflow-x: hidden;
@@ -23,34 +22,46 @@ body {
 
 .welcomepageNav {
   width: 100%;
+  height: 56px;
   background-color: #2a5c82;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: space-between;
   color: white;
-  padding: 15px 6%;
-
+  padding: 10px 4%;
   position: sticky;
   top: 0;
   width: 100%;
   z-index: 1000;
 }
-
-.welcomepageNavSignin {
-  width: 8rem;
-  height: 3rem;
-  border-radius: 20px;
-  background-color: white;
-  border: none;
-  font-size: 1rem;
-  margin-right: 1rem;
+.authButtonContainer {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 .welcomePageNavLogin {
   background-color: #2a5c82;
+  width: 61px;
+  height: 32px;
   border: none;
   color: white;
-  font-size: 1rem;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
 }
+.welcomepageNavSignup {
+  width: 85px;
+  height: 32px;
+  border-radius: 9999px;
+  background-color: white;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: #2a5c82;
+  cursor: pointer;
+}
+
 .navMedstock {
   display: flex;
   align-items: center;
@@ -58,11 +69,13 @@ body {
   width: 10rem;
 }
 .welcomePageHero {
+  width: 100%;
+  height: 350px;
   background-color: #2a5c82;
-  padding-top: 4rem;
+  padding-top: 40px;
   color: white;
   text-align: center;
-  height: 32rem;
+  background: linear-gradient(180deg, #2a5c82 0%, #1e4461 100%);
 }
 
 .welcomePageHeroH1 {
@@ -77,12 +90,15 @@ body {
   font-weight: 500;
 }
 .welcomePageHeroGetStarted {
-  width: 30rem;
-  height: 5rem;
-  border-radius: 25px;
+  width: 320px;
+  height: 52px;
+  border-radius: 12px;
   border: none;
-  font-size: 1.5rem;
+  color: #2a5c82;
+  font-size: 16px;
+  font-weight: 700;
   margin-top: 2rem;
+  cursor: pointer;
 }
 
 .smartSection {
@@ -213,6 +229,7 @@ body {
   width: 6rem;
   border-radius: 10px;
   border: none;
+  cursor: pointer;
 }
 
 .welcomePagefooter {
@@ -231,27 +248,32 @@ body {
 /*sign in css*/
 
 .signinDashBorad {
-  height: 100vh;
   width: 100%;
   background-color: #f8fafc;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* align-items: center; */
 }
 
 .SigninSvgDiv {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 4rem;
-  width: 4rem;
-  border-radius: 10px;
+  gap: 10px;
+}
+.svgDiv {
+  width: 61px;
+  height: 63px;
+  border-radius: 16px;
   background-color: #2a5c82;
-  margin-left: 12rem;
-  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 6px -4px #2a5c8233, 0px 10px 15px -3px #2a5c8233;
 }
 .signinSubDashBoard {
+  margin-top: 100px;
   text-align: center;
 }
 .signinPTag {
@@ -262,8 +284,8 @@ body {
   color: #94a3b8;
 }
 .signinFormWrapper {
+  width: 400px;
   height: 30rem;
-  width: 29rem;
   border-radius: 20px;
   background-color: white;
   color: #64748b;
@@ -302,8 +324,9 @@ body {
 }
 
 .signinOptions {
-  margin-top: 3rem;
+  margin-top: 1.5rem;
   color: #64748b;
+  font-size: 14px;
 }
 
 .siginoptions {
@@ -311,6 +334,7 @@ body {
   background-color: none;
   color: #2a5c82;
   font-weight: bold;
+  font-size: 14px;
 }
 
 .signinComplaince {

@@ -55,10 +55,12 @@ export default function Signin() {
     <div className="signinDashBorad">
       <div className="signinSubDashBoard">
         <div className="SigninSvgDiv">
-          <MdOutlineVaccines color="#FFFFFF" size={40} />
+          <div className="svgDiv">
+            <MdOutlineVaccines color="#FFFFFF" size={40} />
+          </div>
+          <h1>MedStock AI</h1>
+          <p className="signinPTag">INVENTORY SYSTEM</p>
         </div>
-        <h1>MedStock AI</h1>
-        <p className="signinPTag">INVENTORY SYSTEM</p>
 
         <div className="signinFormWrapper">
           <form onSubmit={onSubmit}>
@@ -101,10 +103,10 @@ export default function Signin() {
         <p className="signinOptions">
           Don't have an account?{" "}
           <span>
-            <button className="siginoptions">Sign up</button>
+            <button className="siginoptions">Create an account</button>
           </span>
         </p>
-        <p className="signinComplaince">HIPAA Compliant SSL Secured</p>
+        {/* <p className="signinComplaince">HIPAA Compliant SSL Secured</p> */}
       </div>
     </div>
   );

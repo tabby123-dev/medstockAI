@@ -14,18 +14,18 @@ const Welcome = () => {
           <RiFolder2Fill size={25} />
           <h3 className="navh3">MedStock AI</h3>
         </div>
-        <div>
+        <div className="authButtonContainer">
           <button
             onClick={() => navigate("/signin")}
-            className="welcomepageNavSignin"
-          >
-            sign up
-          </button>
-          <button
-            onClick={() => navigate("/login")}
             className="welcomePageNavLogin"
           >
             Login
+          </button>
+          <button
+            onClick={() => navigate("/signup")}
+            className="welcomepageNavSignup"
+          >
+            Sign Up
           </button>
         </div>
       </nav>
@@ -82,7 +82,7 @@ const Welcome = () => {
       </search>
       <section className="createdWithAi">
         <div>
-          <img src="" alt="" />
+          {/* <img src="" alt="" /> */}
           <h3>Created with MedStock AI</h3>
         </div>
         <button
