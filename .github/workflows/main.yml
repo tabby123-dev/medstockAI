@@ -31,7 +31,6 @@ jobs:
 
             # Remove old files
             rm -rf *
-
           EOF
 
       - name: Copy project files to EC2
@@ -43,18 +42,27 @@ jobs:
           ssh ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} << 'EOF'
             cd ~/frontend
 
-            # Build Docker image
+            # Remove any container using port 80
+            OLD_CONTAINER=$(docker ps -q --filter "publish=80")
+            if [ ! -z "$OLD_CONTAINER" ]; then
+              docker stop $OLD_CONTAINER
+              docker rm $OLD_CONTAINER
+            fi
+
+            # Remove any previous frontend image
+            OLD_IMAGE=$(docker images -q frontend:latest)
+            if [ ! -z "$OLD_IMAGE" ]; then
+              docker rmi -f $OLD_IMAGE
+            fi
+
+            # Build new Docker image
             docker build -t frontend:latest .
 
-            # Stop and remove old container if exists
-            docker rm -f frontend || true 
-
-            #run the frontend container
-          docker run -d \
-            --name frontend \
-            -p 80:80 \
-            frontend:latest
+            # Run the frontend container
+            docker run -d \
+              --name frontend \
+              -p 80:80 \
+              frontend:latest
           EOF
-
 
 
