@@ -47,7 +47,7 @@ jobs:
             docker build -t frontend:latest .
 
             # Stop and remove old container if exists
-            docker rm -f frontend || true
+            docker rm -f frontend || true 
 
             #run the frontend container
           docker run -d \
