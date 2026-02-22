@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* Styling for the welcome page done by meg*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px; /* offset for sticky header height */
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background: #f7f9fc;
+  overflow-x: hidden;
+}
+
+.welcomepageNav {
+  width: 100%;
+  height: 56px;
+  background-color: #2a5c82;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 10px 4%;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.authButtonContainer {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.welcomePageNavLogin {
+  background-color: #2a5c82;
+  width: 61px;
+  height: 32px;
+  border: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.welcomepageNavSignup {
+  width: 85px;
+  height: 32px;
+  border-radius: 9999px;
+  background-color: white;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: #2a5c82;
+  cursor: pointer;
+}
+
+.navMedstock {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 10rem;
+}
+.welcomePageHero {
+  width: 100%;
+  height: 350px;
+  background-color: #2a5c82;
+  padding-top: 40px;
+  color: white;
+  text-align: center;
+  background: linear-gradient(180deg, #2a5c82 0%, #1e4461 100%);
+}
+
+.welcomePageHeroH1 {
+  font-size: 2.3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.welcomePageHeroP {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  font-weight: 500;
+}
+.welcomePageHeroGetStarted {
+  width: 320px;
+  height: 52px;
+  border-radius: 12px;
+  border: none;
+  color: #2a5c82;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.smartSection {
+  background-color: #ffffff;
+  margin: 3rem 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0.1, 0.1, 0.3);
+  padding-left: 1rem;
+  height: 10rem;
+  padding-top: 0.5rem;
+}
+.smartSectionImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 3rem;
+  background-color: lightgreen;
+  border-radius: 10px;
+  margin-top: 2rem;
+  margin-bottom: 0.3rem;
+}
+.smartSectionH2 {
+  margin-bottom: 0.3rem;
+}
+.secondSection {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  margin: 0rem 1.5rem;
+  border-radius: 5px;
+  /* box-shadow: 0 4px 6px rgba(0, 0.1, 0.1, 0.3); */
+  padding-left: 1rem;
+  height: 10rem;
+  padding-top: 0.5rem;
+  gap: 1rem;
+}
+.aiImageDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 3rem;
+  background-color: lightblue;
+  border-radius: 10px;
+  margin-top: 2rem;
+  margin-bottom: 0.3rem;
+}
+
+.aiImageDiv2 {
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightpink;
+  border-radius: 10px;
+  margin-top: 2rem;
+  margin-bottom: 0.3rem;
+}
+
+.forcastDiv {
+  width: 50%;
+  border-radius: 10px;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.stocks {
+  width: 50%;
+  border-radius: 10px;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);
+  align-items: left;
+  padding-left: 1rem;
+}
+
+.pharmacy {
+  background-color: #0f172a;
+  color: white;
+  padding: 2rem;
+  margin: 3rem 1.5rem;
+  border-radius: 10px;
+}
+.pharmacyScore {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.3rem;
+}
+
+.pharmacyH2 {
+  font-weight: lighter;
+  color: #94a3b8;
+  margin-bottom: 0.5rem;
+}
+.pharmacyP {
+  width: 3rem;
+  height: 1.5rem;
+  border-radius: 5px;
+  background-color: #2a5c82;
+  color: #34d399;
+  font-size: 0.8rem;
+  align-items: center;
+  text-align: center;
+  padding-top: 0.4rem;
+}
+.util {
+  font-weight: lighter;
+  color: #94a3b8;
+  margin-top: 0.5rem;
+  font-size: 0.7rem;
+}
+.createdWithAi {
+  background-color: white;
+  color: #64748b;
+  display: flex;
+  justify-content: space-between;
+  height: 3.6rem;
+  /* margin: 3rem 1.5rem; */
+  margin: 0 1.5rem 0 1.5rem;
+  border-radius: 50px;
+  padding: 0 2rem;
+  font-size: 0.5rem;
+  align-items: center;
+}
+.createWithAiButton {
+  background-color: #2a5c82;
+  color: white;
+  height: 2rem;
+  width: 6rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.welcomePagefooter {
+  margin-top: 0;
+  background-color: #e2e8f0;
+  color: #2a5c82;
+  text-align: center;
+  height: 10rem;
+  padding-top: 3rem;
+}
+.welcomePageDiv {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+/*sign in css*/
+
+.signinDashBorad {
+  width: 100%;
+  background-color: #f8fafc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.SigninSvgDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.svgDiv {
+  width: 61px;
+  height: 63px;
+  border-radius: 16px;
+  background-color: #2a5c82;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 6px -4px #2a5c8233, 0px 10px 15px -3px #2a5c8233;
+}
+.signinSubDashBoard {
+  margin-top: 100px;
+  text-align: center;
+}
+.signinPTag {
+  font-size: 0.8rem;
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 3rem;
+  color: #94a3b8;
+}
+.signinFormWrapper {
+  width: 400px;
+  height: 30rem;
+  border-radius: 20px;
+  background-color: white;
+  color: #64748b;
+  text-align: left;
+  padding: 3rem 2rem 3rem 4rem;
+}
+
+.signinIput {
+  width: 90%;
+  height: 3rem;
+  border-radius: 10px;
+  border: none;
+  background-color: #f8fafc;
+  padding: 1rem;
+}
+.signinLables {
+  margin-top: 3rem;
+}
+
+.signinButton {
+  width: 80%;
+  height: 3rem;
+  border-radius: 15px;
+  background-color: #2a5c82;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+}
+
+.singinforgotpassword {
+  text-align: right;
+  font-size: 0.7rem;
+  font-weight: bold;
+  margin-right: 3rem;
+}
+
+.signinOptions {
+  margin-top: 1.5rem;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.siginoptions {
+  border: none;
+  background-color: none;
+  color: #2a5c82;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.signinComplaince {
+  font-size: 0.7rem;
+  margin-top: 3rem;
+  font-weight: 100;
+}
