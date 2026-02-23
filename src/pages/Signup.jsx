@@ -1,7 +1,7 @@
 import React from "react";
 import "./staffDashboard.css";
 export default function Signup(){
-  return(
+  return (
     <div className="dashboard-layout">
       <div className="sidebar">
         <h3>src/assets/Vaccine Logo Branding.png </h3>
@@ -64,6 +64,6 @@ export default function Signup(){
       </div>
       </div>
     </div>
-    
+
   );
 }
