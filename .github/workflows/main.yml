@@ -5,7 +5,7 @@ on:
     branches:
       - main
 
-jobs: 
+jobs:
   deploy:
     runs-on: ubuntu-latest
 
@@ -49,11 +49,19 @@ jobs:
               docker rm $OLD_CONTAINER
             fi
 
-            # Remove any previous frontend image
-            OLD_IMAGE=$(docker images -q frontend:latest)
-            if [ ! -z "$OLD_IMAGE" ]; then
-              docker rmi -f $OLD_IMAGE
+            # Remove container named 'frontend' if it exists
+            if [ "$(docker ps -aq -f name=^frontend$)" ]; then
+              docker stop frontend || true
+              docker rm frontend || true
             fi
+
+            # Remove image named 'frontend:latest' if it exists
+            if [ "$(docker images -q frontend:latest)" ]; then
+              docker rmi -f frontend:latest || true
+            fi
+
+            # Ensure Docker network exists
+            docker network inspect app-network >/dev/null 2>&1 || docker network create app-network
 
             # Build new Docker image
             docker build -t frontend:latest .
@@ -65,5 +73,3 @@ jobs:
               -p 8080:80 \
               frontend:latest
           EOF
-
-
