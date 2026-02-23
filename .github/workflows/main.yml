@@ -61,6 +61,7 @@ jobs:
             # Run the frontend container
             docker run -d \
               --name frontend \
+              --network app-network \
               -p 8080:80 \
               frontend:latest
           EOF
