@@ -313,7 +313,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0px 4px 6px -4px #2a5c8233, 0px 10px 15px -3px #2a5c8233;
+  box-shadow:
+    0px 4px 6px -4px #2a5c8233,
+    0px 10px 15px -3px #2a5c8233;
 }
 .signinSubDashBoard {
   margin-top: 100px;
