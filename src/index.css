@@ -106,12 +106,8 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.05);
   margin: 3rem 1.5rem;
   border-radius: 16px;
-<<<<<<<<< Temporary merge branch 1
-  box-shadow: 0px 8px 10px -6px rgba(0, 0, 0, 0.1),
-=========
   box-shadow:
     0px 8px 10px -6px rgba(0, 0, 0, 0.1),
->>>>>>>>> Temporary merge branch 2
     0px 20px 25px -5px rgba(0, 0, 0, 0.1);
   padding-left: 1.5rem;
   height: 184.75px;
@@ -126,13 +122,9 @@ body {
   /* margin: 30px 0; */
   margin-bottom: 30px;
   margin-top: 10px;
-<<<<<<<<< Temporary merge branch 1
-  box-shadow: 0px 4px 6px -4px #22c55e33, 0px 10px 15px -3px #22c55e33;
-=========
   box-shadow:
     0px 4px 6px -4px #22c55e33,
     0px 10px 15px -3px #22c55e33;
->>>>>>>>> Temporary merge branch 2
   background-color: #22c55e;
   border-radius: 12px;
 }
@@ -192,13 +184,9 @@ body {
   height: 138px;
   width: 50%;
   border-radius: 16px;
-<<<<<<<<< Temporary merge branch 1
-  box-shadow: 0px 4px 6px -4px #0000001a, 0px 10px 15px -3px #0000001a;
-=========
   box-shadow:
     0px 4px 6px -4px #0000001a,
     0px 10px 15px -3px #0000001a;
->>>>>>>>> Temporary merge branch 2
   background: #ffffff01;
   border: 1px solid rgba(0, 0, 0, 0.05);
   padding-left: 1.5rem;
@@ -208,13 +196,9 @@ body {
   height: 138px;
   width: 50%;
   border-radius: 16px;
-<<<<<<<<< Temporary merge branch 1
-  box-shadow: 0px 4px 6px -4px #0000001a, 0px 10px 15px -3px #0000001a;
-=========
   box-shadow:
     0px 4px 6px -4px #0000001a,
     0px 10px 15px -3px #0000001a;
->>>>>>>>> Temporary merge branch 2
   background: #ffffff01;
   border: 1px solid rgba(0, 0, 0, 0.05);
   align-items: left;
@@ -695,13 +679,9 @@ button:hover {
   height: 153px;
   border-radius: 16px;
   padding: 16px;
-<<<<<<<<< Temporary merge branch 1
-  box-shadow: 0px 8px 10px -6px #1180d433, 0px 20px 25px -5px #1180d433;
-=========
   box-shadow:
     0px 8px 10px -6px #1180d433,
     0px 20px 25px -5px #1180d433;
->>>>>>>>> Temporary merge branch 2
   background: #1180d4;
   margin-top: 30px;
 }
@@ -786,68 +766,65 @@ button:hover {
   border-top-left-radius: 4px;
   background: #ffffff80;
 }
-<<<<<<<<< Temporary merge branch 1
 
 /* SIGNUP DESGINS */
-.registration-container{
-    height:100vh;
-    background-color:#F8FAFC;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
+.registration-container {
+  height: 100vh;
+  background-color: #f8fafc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .registration-card {
-    background-color:#F8FAFC;
-    padding: 30px;
-    width: 400px;
-    border: 12px;
-    box-shadow: #1A262F;
+  background-color: #f8fafc;
+  padding: 30px;
+  width: 400px;
+  border: 12px;
+  box-shadow: #1a262f;
 }
 .registration-card h2 {
-    margin-bottom: 5px;
-    color: #2A5C82;
-    margin-bottom: 20px;
+  margin-bottom: 5px;
+  color: #2a5c82;
+  margin-bottom: 20px;
 }
 form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
-label{
-    font-size: 14px;
-    margin-bottom: 5px;
-    margin-top: 10px;
-    color:#1A262F;
+label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  color: #1a262f;
 }
-input{
-    padding: 10px;
-    border-radius: 8px;
-    /* border: 1px; solid #cbd5e1; */
-    outline: none;
+input {
+  padding: 10px;
+  border-radius: 8px;
+  /* border: 1px; solid #cbd5e1; */
+  outline: none;
 }
 input:focus {
-    border-color:#2A5C82 ;
+  border-color: #2a5c82;
 }
 .responsibilities-box h4 {
-    margin-bottom: 10px;
-    color: #E0F2FE;
+  margin-bottom: 10px;
+  color: #e0f2fe;
 }
 .responsibilities-box ul {
-    padding-left: 20px;
-    font-size: 14px;
+  padding-left: 20px;
+  font-size: 14px;
 }
 .submit-btn {
-    margin-top: 20px;
-    padding: 12px;
-    background-color:#2A5C82;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: bold;
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #2a5c82;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
 }
-.submit-btn:hover{
-    background-color: #2A5C82;
+.submit-btn:hover {
+  background-color: #2a5c82;
 }
-=========
->>>>>>>>> Temporary merge branch 2
