@@ -100,12 +100,10 @@ export default function Signin() {
             </button>
           </form>
         </div>
-        <p className="signinOptions">
+        <div className="signinOptions">
           Don't have an account?{" "}
-          <span>
-            <button className="siginoptions">Create an account</button>
-          </span>
-        </p>
+          <span className="siginoptions">Create an account</span>
+        </div>
         {/* <p className="signinComplaince">HIPAA Compliant SSL Secured</p> */}
       </div>
     </div>
