@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { FaArrowTrendUp } from "react-icons/fa6";
 import { HiMiniBellAlert } from "react-icons/hi2";
-import { FaFileCircleCheck } from "react-icons/fa6";
+import { MdOutlineInventory } from "react-icons/md";
 import { RiFolder2Fill } from "react-icons/ri";
 
 const Welcome = () => {
@@ -45,10 +45,10 @@ const Welcome = () => {
       </div>
       <section className="smartSection">
         <div className="smartSectionImage">
-          <FaFileCircleCheck color="#FFFFFF" size={25} />
+          <MdOutlineInventory color="#FFFFFF" size={25} />
         </div>
         <h2 className="smartSectionH2">Smart Inventory Tracking</h2>
-        <p>
+        <p className="smartSectionp">
           Track medicines with batch numbers, expiry dates, and real-time stock
           levels across multiple locations.
         </p>
@@ -56,17 +56,17 @@ const Welcome = () => {
       <section className="secondSection">
         <div className="forcastDiv">
           <div className="aiImageDiv">
-            <FaArrowTrendUp color="#2A5C82" size={30} />
+            <FaArrowTrendUp color="#2A5C82" size={20} />
           </div>
-          <h3>AI Forecasts</h3>
-          <p>Predict demand spikes</p>
+          <h3 className="forcasth3">AI Forecasts</h3>
+          <p className="forcastp">Predict demand spikes</p>
         </div>
         <div className="stocks">
           <div className="aiImageDiv2">
-            <HiMiniBellAlert color="#DC2626" size={30} />
+            <HiMiniBellAlert color="#DC2626" size={20} />
           </div>
-          <h3>Stock Alerts</h3>
-          <p>Never run out of stock</p>
+          <h3 className="forcasth3">Stock Alerts</h3>
+          <p className="forcastp">Never run out of stock</p>
         </div>
       </section>
       <search className="pharmacy">
@@ -77,7 +77,6 @@ const Welcome = () => {
             <p>2.4%</p>
           </div>
         </div>
-        <hr />
         <p className="util">UTILIZATION</p>
       </search>
       <section className="createdWithAi">
