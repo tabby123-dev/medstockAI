@@ -60,7 +60,7 @@ jobs:
               --name frontend \
               --network app-network \
               -p 8080:80 \
-              frontend
+              frontend 
           EOF
 
 
