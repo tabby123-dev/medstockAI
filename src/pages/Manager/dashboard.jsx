@@ -1,4 +1,5 @@
 import React from "react";
+import './manager.css';
 import { IoIosSearch } from "react-icons/io";
 import { MdOutlineVaccines } from "react-icons/md";
 import { FaBoxArchive } from "react-icons/fa6";
