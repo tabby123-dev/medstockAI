@@ -836,3 +836,193 @@ button:hover {
   font-style: bold;
   color: #1180d4;
 }
+
+/* Entry Nav Styling Done by Meg*/
+.entryNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.entryNavH2 {
+  font-size: 18px;
+  font-weight: 700;
+  font-style: bold;
+  line-height: 28px;
+  color: #f1f5f9;
+}
+
+.entryNavP {
+  width: 150px;
+  height: 23px;
+  border-radius: 4px;
+  padding: 4px 8px;
+  background-color: #2a5c821a;
+  font-size: 10px;
+  line-height: 15px;
+  font-style: bold;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #2a5c82;
+}
+.directEntry {
+  font-size: 24px;
+  font-weight: 700;
+  font-style: bold;
+  line-height: 32px;
+  color: #ffffff;
+}
+.directEntryP {
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 20px;
+  color: #64748b;
+}
+
+.manualSubDiv {
+  margin-top: 30px;
+}
+
+.manualEntryH4 {
+  font-size: 10px;
+  font-weight: 700;
+  font-style: bold;
+  line-height: 15px;
+  letter-spacing: 1px;
+  color: #64748b;
+}
+.manualEntrydivs {
+  width: 100%;
+  height: 53px;
+  border-radius: 12px;
+  padding: 16px;
+  background-color: #161e27;
+  border: 1px solid #23313d;
+  margin-top: 4px;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 100%;
+  color: #475569;
+}
+
+.entrySupplierP {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
+  color: #f1f5f9;
+}
+.manualSubDivTwin {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 30px;
+}
+.entryQuatityDiv {
+  width: 50%;
+}
+
+.entryExpiryDate {
+  width: 50%;
+}
+.QTY {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.entrydirectAid {
+  width: 100%;
+  height: 74px;
+  border-radius: 16px;
+  padding: 16px;
+  border: 1px solid #2a5c8233;
+  background-color: #2a5c820d;
+  margin-top: 30px;
+}
+.directaidp {
+  font-size: 14px;
+  font-weight: 700;
+  font-style: bold;
+  line-height: 20px;
+  color: #ffffff;
+}
+.entryAuthority {
+  margin-top: 30px;
+  padding: 0 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Authorisedby {
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 16px;
+  color: #64748b;
+  display: grid;
+  gap: 4px;
+}
+.authourisedbymanager {
+  display: grid;
+  gap: 4px;
+}
+
+.AutbyMp {
+  font-size: 11px;
+  font-weight: 700;
+  font-style: bold;
+  line-height: 16.5px;
+  color: #cbd5e1;
+}
+
+.AutbyMp1 {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 15px;
+  font-style: normal;
+  color: #22c55e;
+}
+.entryBigButon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+.entryBigBtt {
+  width: 448px;
+  height: 52px;
+  border-radius: 12px;
+  padding: 16px 0;
+  background-color: #2a5c82;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  font-style: bold;
+  color: #ffffff;
+}
+.footerDiv {
+  width: 100%;
+  height: 121px;
+  border-top: 1px solid #23313d;
+  padding: 24px;
+  gap: 16px;
+  background-color: #0b1117f2;
+  backdrop-filter: blur(24px);
+  margin-left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.entryBlackBox {
+  width: 128px;
+  height: 6px;
+  opacity: 1;
+  border-radius: 9999px;
+  background-color: #1e293b;
+  border: 1px solid #23313d;
+}
