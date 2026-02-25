@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+ 
 const Signup = () => {
   const [formData, setFormData] = useState({
     fullName: "",
@@ -8,7 +8,7 @@ const Signup = () => {
     password: "",
     confirmPassword: "",
   });
-
+ 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -16,7 +16,7 @@ const Signup = () => {
       [name]: value,
     });
   };
-
+ 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (formData.password !== formData.confirmPassword) {
@@ -26,7 +26,7 @@ const Signup = () => {
     console.log("Form Submitted:", formData);
     alert("Manager account created successfuly");
   };
-
+ 
   return (
     <div className="registration-container">
       <div className="registration-card">
@@ -94,5 +94,7 @@ const Signup = () => {
     </div>
   );
 };
-
+ 
 export default Signup;
+ 
+ 
