@@ -17,6 +17,7 @@ import AdminDashboard from "./pages/Admin/dashboard";
 import ManagerDashboard from "./pages/Manager/dashboard";
 import ManagerReview from "./pages/Manager/review";
 import ManagerHistory from "./pages/Manager/history";
+import ManagerEntry from "./pages/Manager/entry";
 
 // Staff pages — create these files inside src/Staff/
 import StaffDashboard from "./pages/Staff/dashboard";
@@ -42,8 +43,9 @@ function App() {
           <Route path="/manager/dashboard" element={<ManagerDashboard />} />
           <Route path="/manager/review" element={<ManagerReview />} />
           <Route path="/manager/history" element={<ManagerHistory />} />
+          <Route path="/manager/entry" element={<ManagerEntry />} />
         </Route>
-
+        
         {/* STAFF ROUTES */}
         <Route element={<ProtectedRoute allowedRole="STAFF" />}>
           <Route path="/staff/dashboard" element={<StaffDashboard />} />
