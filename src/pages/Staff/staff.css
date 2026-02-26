@@ -1,1 +1,377 @@
 /* All styling for pages under staff folder */
+/* left panel css */
+.left-panel {
+width: 70px;
+height: 100vh;
+background-color: #1E293B; 
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-top: 15px;
+}
+
+/* Logo at top */
+.logo {
+font-size: 22px;
+color: #FFFFFF;
+margin-bottom: 25px;
+}
+
+/* Icons container */
+.nav-icons {
+display: flex;
+flex-direction: column;
+gap: 16px;
+flex: 1;
+justify-content: flex-start;
+padding-top: 20px;
+}
+
+/* Each icon */
+.nav-item {
+font-size: 24px;
+width: 50px;
+height: 50px;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #64748B;
+cursor: pointer;
+padding: 0;
+border-radius: 8px;
+transition: 0.2s;
+}
+
+/* Ensure nav images render correctly */
+.nav-item img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  display: block;
+}
+
+/* Logo image sizing */
+.logo img {
+  width: 40px;
+  height: auto;
+  display: block;
+}
+
+/* Last icon (settings) goes below the page */
+.nav-item:last-child {
+margin-top: auto;
+margin-bottom: 20px;
+}
+
+/* Active dashboard icon highlight */
+.nav-item.active {
+background: #138EEC;
+color:#FFFFFF;
+}
+
+/* Middle panel styling */
+.middle-panel {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0 120px;
+  accent-color:#F1F5F9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.middle-panel::-webkit-scrollbar {
+  display: none;
+}
+
+.middle-panel {
+  color: #FFFFFF;
+}
+
+.middle-panel p,
+.middle-panel .date-text,
+.middle-panel .item p,
+.middle-panel .card p,
+.middle-panel .alert-card p {
+  color: #94A3B8;
+}
+
+.user-role {
+  color: #138EEC;
+}
+
+.pending-header h4 {
+  color: #64748B;
+}
+
+/* middlepanel */
+.body {
+  margin: 0;
+  color: #1E293B; 
+  
+}
+.background{
+    background: #0F172A;
+}
+
+.staff-header {
+  width: 100%;
+  padding: 18px 30px;
+  background:#101A22CC ;
+  border-bottom: 1px #138EEC;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #F1F5F9;
+  font:inter;
+  flex-shrink: 0;
+}
+
+/* LEFT SIDE */
+.header-left h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.date-text {
+  margin: 4px 0 0 0;
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #94A3B8;
+}
+
+/* RIGHT SIDE */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.user-info {
+  text-align: right;
+}
+
+.user-name {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.user-role {
+  font-size: 11px;
+  color: #138EEC;
+}
+
+.avatar img {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  color: #138EEC;
+  border: 2px 
+}
+
+/* ALERT CARD */
+.alert-card {
+ background:  #1E293B;
+  width: 624px;
+  max-width: 624px;
+  height: 100px;
+  padding: 16px;
+  gap: 16px;
+  opacity: 1;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.alert-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.alert-icon {
+  background: #138EEC33;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.view-btn {
+  background: none;
+  border: none;
+  color:#138EEC;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.content-wrapper {
+  width: 912px;
+  max-width: 912px;
+  height: 629px;
+  padding-right: 120px;
+  padding-left: 120px;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* ACTION CARDS */
+.actions {
+  display: flex;
+  width: 100%;
+  height: 120px;
+  padding: 16px;
+  gap: 16px;
+  opacity: 1;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.card {
+  flex: 1;
+  padding: 15px;
+  border-radius: 18px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.primary {
+  background:#138EEC;
+}
+
+.secondary {
+  background:#1A262F;
+}
+
+/* PENDING */
+.pending-section {
+  width: 100%;
+  height: auto;
+  flex: 1;
+  padding: 16px 24px;
+  gap: 12px;
+  opacity: 1;
+  overflow: hidden;
+}
+
+.pending-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.badge {
+  background: #1E293B;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.item {
+  background: #1A262F;
+  padding: 18px;
+  border-radius: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  transition: 0.3s ease;
+}
+
+.item-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.item-icon {
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.orange {
+  background: #F973161A;
+}
+
+.blue {
+  background: #3B82F61A;
+}
+
+.item-status {
+  text-align: right;
+}
+
+.waiting {
+  color: #F97316;
+  font-size: 13px;
+}
+
+.draft {
+  color: #64748B;
+  font-size: 13px;
+}
+
+/* Right panel */
+.right-panel {
+flex: 0 0 220px;
+height: 100vh;
+background:#1E293B;
+padding: 20px;
+color: white;
+font: inter;
+border-left: 1px solid #1E293B;
+overflow-y: auto;
+}
+/* Title */
+.right-title {
+font-size: 12px;
+color: #64748B;
+margin-bottom: 8px;
+}
+
+/* Staff Count */
+.staff-count {
+font-size: 22px;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+/* Progress Bar */
+.progress-bar {
+width: 100%;
+height: 6px;
+
+background: #101A22;
+border-radius: 6px;
+overflow: hidden;
+margin-bottom: 20px;
+}
+
+.progress-fill {
+width: 70%; /* 1 out of 3 staff */
+height: 100%;
+background: #138EEC;
+}
+
+/* Team Section */
+.team-text {
+font-size: 12px;
+color: #64748B;
+margin-top: 10px;
+}
+
+.team-subtext {
+font-size: 11px;
+color: #64748B;
+}
