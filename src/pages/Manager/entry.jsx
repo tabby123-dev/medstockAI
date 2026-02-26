@@ -1,11 +1,20 @@
 import React from "react";
 import "./manager.css";
+import { MdOutlineVaccines } from "react-icons/md";
+import { MdDashboard } from "react-icons/md";
+import { GoBellFill } from "react-icons/go";
+import { LuArchive } from "react-icons/lu";
+import { GiBackwardTime } from "react-icons/gi";
+import { IoSettings } from "react-icons/io5";
 
 const Entry = () => {
   return (
     <>
       <div className="body">
         <nav className="nav-links">
+          <div className="vaccineSvg">
+            <MdOutlineVaccines size={30} />
+          </div>
           <div className="entryNav">
             <h2 className="entryNavH2">Add New Medicine</h2>
             <div className="entryNavP">
@@ -16,7 +25,13 @@ const Entry = () => {
         <div className="app-layout">
           <aside className="sidebar">
             <div className="logo-box">
-              <img src="" alt="Logo" className="sidebar-icon" />
+              <MdDashboard size={25} color="#94A3B8;" />
+              <GoBellFill size={25} color="#94A3B8;" />
+              <LuArchive size={25} color="#94A3B8;" />
+              <GiBackwardTime size={25} color="#94A3B8;" />
+            </div>
+            <div className="navLogoSec">
+              <IoSettings size={25} color="#94A3B8;" />
             </div>
           </aside>
           <main className="main-content">
@@ -75,12 +90,12 @@ const Entry = () => {
               </div>
             </div>
             <div className="entryBigButon">
-                <button className="entryBigBtt">Authorize & Add to Live Stock</button>
+              <button className="entryBigBtt">
+                Authorize & Add to Live Stock
+              </button>
             </div>
             <footer className="footerDiv">
-                    <div className="entryBlackBox">
-
-                    </div>
+              <div className="entryBlackBox"></div>
             </footer>
           </main>
         </div>

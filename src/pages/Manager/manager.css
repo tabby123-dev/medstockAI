@@ -20,8 +20,8 @@
   color: var(--color-text);
   font-family: "Inter", sans-serif;
 }
+
 .nav-links {
-  margin-left: 80px;
   background-color: #101a22cc;
   backdrop-filter: blur(12px);
   position: sticky;
@@ -30,6 +30,10 @@
   z-index: 1000;
   margin-top: 0;
   padding: 16px 24px 16px 24px;
+  display: flex;
+}
+.navadjustment {
+  margin-left: 80px;
 }
 
 .navoversight {
@@ -50,6 +54,15 @@
   margin-top: 0;
   padding-top: 0;
 }
+.vaccineSvg {
+  height: 40px;
+  width: 40px;
+  border-radius: 12px;
+  background-color: #1180d4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /* --- LAYOUT --- */
 .app-layout {
@@ -65,9 +78,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px 0;
+  height: 100vh;
 }
-
+.logo-box {
+  display: grid;
+  gap: 30px;
+}
+.navLogoSec {
+  margin-top: 550px;
+}
 .assest {
   display: flex;
   width: 100%;
@@ -383,7 +402,6 @@ button:hover {
 }
 
 .reviewNavlinks {
-  margin-left: 80px;
   background-color: #101a22cc;
   backdrop-filter: blur(12px);
   position: sticky;
@@ -392,6 +410,9 @@ button:hover {
   z-index: 1000;
   margin-top: 0;
   padding: 16px 24px 16px 24px;
+  display: flex;
+  align-self: center;
+  gap: 40px;
 }
 
 .reviewAppLayout {
@@ -666,6 +687,10 @@ button:hover {
   line-height: 28px;
   color: #f1f5f9;
   margin-bottom: 10px;
+  width: 180px;
+}
+.hisnav {
+  margin-left: 30px;
 }
 
 .historicalSearchBar {
@@ -842,6 +867,7 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-left: 30px;
 }
 
 .entryNavH2 {

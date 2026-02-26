@@ -2,20 +2,35 @@ import React from "react";
 import { FaLessThan } from "react-icons/fa";
 
 import "./manager.css";
+import { MdOutlineVaccines } from "react-icons/md";
+import { MdDashboard } from "react-icons/md";
+import { GoBellFill } from "react-icons/go";
+import { LuArchive } from "react-icons/lu";
+import { GiBackwardTime } from "react-icons/gi";
+import { IoSettings } from "react-icons/io5";
 
 const review = () => {
   return (
     <div className="reviewbody">
       <nav className="reviewNavlinks">
+        <div className="vaccineSvg">
+          <MdOutlineVaccines size={30} />
+        </div>
         <div className="reviewOversightDiv">
           <FaLessThan color="#94A3B8" size={19.97} />
           <h3 className="reviewNavOversighth2">Review Entry</h3>
         </div>
       </nav>
       <div className="reviewAppLayout">
-        <aside className="reviewSidebar">
-          <div className="reviewLogoBox">
-            <img src="" className="sidebar-icon" />
+        <aside className="sidebar">
+          <div className="logo-box">
+            <MdDashboard size={25} color="#94A3B8;" />
+            <GoBellFill size={25} color="#94A3B8;" />
+            <LuArchive size={25} color="#94A3B8;" />
+            <GiBackwardTime size={25} color="#94A3B8;" />
+          </div>
+          <div className="navLogoSec">
+            <IoSettings size={25} color="#94A3B8;" />
           </div>
         </aside>
         <div className="reviewMain">
