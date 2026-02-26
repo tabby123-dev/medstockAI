@@ -53,7 +53,8 @@ jobs:
             docker network inspect app-network >/dev/null 2>&1 || docker network create app-network
 
             # --- Build new Docker image ---
-            docker build -t frontend .
+            #docker build -t frontend .
+            docker build --pull --no-cache -t frontend .
 
             # --- Run the frontend container ---
             docker run -d \
