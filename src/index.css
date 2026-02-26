@@ -106,7 +106,8 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.05);
   margin: 3rem 1.5rem;
   border-radius: 16px;
-  box-shadow: 0px 8px 10px -6px rgba(0, 0, 0, 0.1),
+  box-shadow:
+    0px 8px 10px -6px rgba(0, 0, 0, 0.1),
     0px 20px 25px -5px rgba(0, 0, 0, 0.1);
   padding-left: 1.5rem;
   height: 184.75px;
@@ -121,7 +122,9 @@ body {
   /* margin: 30px 0; */
   margin-bottom: 30px;
   margin-top: 10px;
-  box-shadow: 0px 4px 6px -4px #22c55e33, 0px 10px 15px -3px #22c55e33;
+  box-shadow:
+    0px 4px 6px -4px #22c55e33,
+    0px 10px 15px -3px #22c55e33;
   background-color: #22c55e;
   border-radius: 12px;
 }
@@ -181,7 +184,9 @@ body {
   height: 138px;
   width: 50%;
   border-radius: 16px;
-  box-shadow: 0px 4px 6px -4px #0000001a, 0px 10px 15px -3px #0000001a;
+  box-shadow:
+    0px 4px 6px -4px #0000001a,
+    0px 10px 15px -3px #0000001a;
   background: #ffffff01;
   border: 1px solid rgba(0, 0, 0, 0.05);
   padding-left: 1.5rem;
@@ -191,7 +196,9 @@ body {
   height: 138px;
   width: 50%;
   border-radius: 16px;
-  box-shadow: 0px 4px 6px -4px #0000001a, 0px 10px 15px -3px #0000001a;
+  box-shadow:
+    0px 4px 6px -4px #0000001a,
+    0px 10px 15px -3px #0000001a;
   background: #ffffff01;
   border: 1px solid rgba(0, 0, 0, 0.05);
   align-items: left;
@@ -388,434 +395,67 @@ body {
   font-weight: 100;
 }
 
-/* Style for managers Dashboard by meg */
-:root {
-  --bg-dark-body: #050810;
-  --bg-card: #0b1120;
-  --color-blue: #3b82f6;
-  --color-green: #22c55e;
-  --color-text: #f8fafc;
-  --color-muted: #64748b;
 
-  /* Your specific requested shadow */
-  --card-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.4);
-}
-
-/* --- BASIC RESET --- */
-
-.body {
-  margin: 0;
-  background-color: var(--bg-dark-body);
-  color: var(--color-text);
-  font-family: "Inter", sans-serif;
-}
-.nav-links {
-  margin-left: 80px;
-  background-color: #101a22cc;
-  backdrop-filter: blur(12px);
-  position: sticky;
-  top: 0;
-  max-width: 100%;
-  z-index: 1000;
-  margin-top: 0;
-  padding: 16px 24px 16px 24px;
-}
-
-.navoversight {
-  font-size: 20px;
-  font-style: bold;
-  font-weight: 700;
-  line-height: 28px;
-  color: #f1f5f9;
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-.navDate {
-  font-size: 12px;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 16px;
-  color: #94a3b8;
-  margin-top: 0;
-  padding-top: 0;
-}
-
-/* --- LAYOUT --- */
-.app-layout {
-  display: flex;
-  min-height: 100vh;
-  /* background-color: #3b82f6; */
-}
-
-.sidebar {
-  width: 80px;
-  background: var(--bg-dark-body);
-  border-right: 1px solid #1e293b;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px 0;
-}
-
-.assest {
-  display: flex;
-  width: 100%;
-  height: 137px;
-  align-items: center;
-  gap: 16px;
-  justify-content: space-between;
-}
-
-.dashBoardTotalAssest {
-  width: 50%;
-  height: 130px;
-  border-radius: 12px;
-  box-shadow: 0px 1px 2px 0px #0000000d;
-  border: 1px solid #23313d;
-  padding-left: 10px;
-  background: #1a252e;
-}
-.dashBoardActiveAlert {
-  width: 50%;
-  height: 130px;
-  border-radius: 12px;
-  box-shadow: 0px 1px 2px 0px #0000000d;
-  border: 1px solid #23313d;
-  padding-left: 10px;
-  background: #1a252e;
-  text-align: left;
-}
-
-.dashboardassesth4 {
-  font-size: 10px;
-  font-weight: 700s;
-  font-style: bold;
-  line-height: 15px;
-  letter-spacing: 0.5px;
-  color: #64748b;
-  margin-bottom: 30px;
-}
-
-.dashboardassestfigures {
-  font-weight: 700;
-  font-style: bold;
-  font-size: 24px;
-  line-height: 32px;
-  color: #f1f5f9;
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-.dashboardassestp {
-  font-weight: 500;
-  font-style: normal;
-  font-size: 10px;
-  line-height: 15px;
-  margin-top: 0;
-  padding-top: 0;
-  color: #22c55e;
-}
-.dashboardassestp2 {
-  font-weight: 500;
-  font-style: normal;
-  font-size: 10px;
-  line-height: 15px;
-  margin-top: 0;
-  padding-top: 0;
-  color: #ef4444;
-}
-.list-title {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.approvalListH2 {
-  font-size: 14px;
-  font-weight: 700;
-  font-style: bolds;
-  line-height: 20px;
-  letter-spacing: 1.4px;
-  color: #64748b;
-  margin-top: 24px;
-}
-.main-content {
-  flex: 1;
-  padding: 40px;
-  max-width: 100%;
-}
-.approval-card {
-  background: var(--bg-card);
-  border-radius: 16px;
-  padding: 24px;
-  margin-bottom: 16px;
-  box-shadow: var(--card-shadow);
-  border: 1px solid #1e293b;
-}
-.aprrovalanchor {
-  text-decoration: none;
-  font-size: 12px;
-  line-height: 16px;
-  font-weight: 500;
-  color: #1180d4;
-  cursor: pointer;
-}
-
-.card-top {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 16px;
-}
-
-h3 {
-  margin: 0;
-  font-size: 18px;
-  font-weight: 600;
-}
-.sub-label {
-  font-size: 11px;
-  color: var(--color-muted);
-  display: block;
-}
-.qty-add {
-  font-size: 20px;
-  font-weight: 700;
-  color: var(--color-blue);
-}
-
-/* --- USER INFO STRIP --- */
-.user-strip {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 20px;
-  font-size: 13px;
-}
-
-.avatar {
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 10px;
-  font-weight: bold;
-  color: white;
-}
-.av-green {
-  background: var(--color-green);
-}
-.av-blue {
-  background: var(--color-blue);
-}
-
-/* --- BUTTONS --- */
-.action-buttons {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-}
-
-button {
-  padding: 12px;
-  border-radius: 8px;
-  border: none;
-  font-weight: 600;
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-.btn-dark {
-  background: #1e293b;
-  color: white;
-}
-.btn-blue {
-  background: var(--color-blue);
-  color: white;
-}
-button:hover {
-  opacity: 0.9;
-  transform: translateY(-1px);
-}
-
-.dashboardInsulin {
-  width: 100%;
-  height: 66px;
-  border-radius: 12px;
-  border: 1px solid #23313d;
-  background: #1a252e;
-}
-.criticalsecth2 {
-  font-size: 12px;
-  font-weight: 700;
-  font-style: bold;
-  line-height: 16px;
-  color: #f1f5f9;
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-.criticalsectionp {
-  font-size: 10px;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 15px;
-  color: #64748b;
-  margin-top: 0;
-  padding-top: 0;
-}
-
-.criticalalert {
-  display: grid;
-  gap: 16px;
-}
-.inventoryHealth {
-  width: 100%;
-  height: 153px;
-  border-radius: 16px;
-  padding: 16px;
-  box-shadow: 0px 8px 10px -6px #1180d433, 0px 20px 25px -5px #1180d433;
-  background: #1180d4;
-  margin-top: 30px;
-}
-
-.inventoryh4 {
-  font-size: 16px;
-  font-weight: 700;
-  font-style: bold;
-  color: #ffffff;
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-
-.inventoryp {
-  font-size: 12px;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 16px;
-  color: #ffffff;
-  margin-top: 5px;
-  padding-top: 0;
-}
-.inventoryHealthRatio {
-  /* display: flex;
-  flex-direction: row; */
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 8px;
-  height: 76px;
-  align-items: end;
-  /* padding-bottom: 10px; */
-  width: 100%;
-}
-
-.one {
-  height: 38.39px;
-  /* width: 153.14px; */
-  border-top-right-radius: 4px;
-  border-top-left-radius: 4px;
-  background-color: #ffffff33;
-}
-.two {
-  height: 51.19px;
-  /* width: 153.14px; */
-  border-top-right-radius: 4px;
-  border-top-left-radius: 4px;
-  background-color: #ffffff33;
-}
-.three {
-  height: 60.8px;
-  /* width: 153.14px; */
-  border-top-right-radius: 4px;
-  border-top-left-radius: 4px;
-  background-color: #ffffff66;
-}
-
-.four {
-  height: 44.8px;
-  /* width: 153.14px; */
-  border-top-right-radius: 4px;
-  border-top-left-radius: 4px;
-  background-color: #ffffff33;
-}
-.five {
-  height: 54.39px;
-  /* width: 153.14px; */
-  border-top-right-radius: 4px;
-  border-top-left-radius: 4px;
-  background-color: #ffffff33;
-}
-.six {
-  height: 41.5px;
-  /* width: 153.14px; */
-  border-top-right-radius: 4px;
-  border-top-left-radius: 4px;
-  background-color: #ffffff33;
-}
-.seven {
-  height: 76px;
-  /* width: 153.14px; */
-  border-top-right-radius: 4px;
-  border-top-left-radius: 4px;
-  background: #ffffff80;
-}
 
 /* SIGNUP DESGINS */
-.registration-container{
-    height:100vh;
-    background-color:#F8FAFC;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
+.registration-container {
+  height: 100vh;
+  background-color: #f8fafc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .registration-card {
-    background-color:#F8FAFC;
-    padding: 30px;
-    width: 400px;
-    border: 12px;
-    box-shadow: #1A262F;
+  background-color: #f8fafc;
+  padding: 30px;
+  width: 400px;
+  border: 12px;
+  box-shadow: #1a262f;
 }
 .registration-card h2 {
-    margin-bottom: 5px;
-    color: #2A5C82;
-    margin-bottom: 20px;
+  margin-bottom: 5px;
+  color: #2a5c82;
+  margin-bottom: 20px;
 }
 form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
-label{
-    font-size: 14px;
-    margin-bottom: 5px;
-    margin-top: 10px;
-    color:#1A262F;
+label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  color: #1a262f;
 }
-input{
-    padding: 10px;
-    border-radius: 8px;
-    /* border: 1px; solid #cbd5e1; */
-    outline: none;
+input {
+  padding: 10px;
+  border-radius: 8px;
+  /* border: 1px; solid #cbd5e1; */
+  outline: none;
 }
 input:focus {
-    border-color:#2A5C82 ;
+  border-color: #2a5c82;
 }
 .responsibilities-box h4 {
-    margin-bottom: 10px;
-    color: #E0F2FE;
+  margin-bottom: 10px;
+  color: #e0f2fe;
 }
 .responsibilities-box ul {
-    padding-left: 20px;
-    font-size: 14px;
+  padding-left: 20px;
+  font-size: 14px;
 }
 .submit-btn {
-    margin-top: 20px;
-    padding: 12px;
-    background-color:#2A5C82;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: bold;
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #2a5c82;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
 }
-.submit-btn:hover{
-    background-color: #2A5C82;
+.submit-btn:hover {
+  background-color: #2a5c82;
 }
+
