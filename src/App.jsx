@@ -45,6 +45,7 @@ function App() {
         {/* STAFF ROUTES */}
         <Route element={<ProtectedRoute allowedRole="STAFF" />}>
           <Route path="/staff/dashboard" element={<StaffDashboard />} />
+          <Route path="/staff/inventoryalerts" element={<staffAlert />} />
         </Route>
       </Routes>
     </AuthProvider>
