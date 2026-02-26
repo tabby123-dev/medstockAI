@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 medstockAI
 This repo is for Group 54 capstone project
@@ -15,4 +14,4 @@ The React Compiler is not enabled on this template because of its impact on dev 
 Expanding the ESLint configuration
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the TS template for information on how to integrate TypeScript and typescript-eslint in your project.
 
-frontend
+
