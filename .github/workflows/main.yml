@@ -1,5 +1,5 @@
 name: Deploy frontend to EC2 (Docker)
-
+ 
 on:
   push:
     branches:
