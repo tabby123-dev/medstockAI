@@ -1,14 +1,24 @@
 import React from "react";
+import { MdOutlineVaccines } from "react-icons/md";
+import { MdDashboard } from "react-icons/md";
+import { GoBellFill } from "react-icons/go";
+import { LuArchive } from "react-icons/lu";
+import { GiBackwardTime } from "react-icons/gi";
+import { IoSettings } from "react-icons/io5";
 
 const History = () => {
   return (
     <>
       <div className="body">
         <nav className="nav-links">
-          <div>
-            <h2 className="historynavh2">Request History</h2>
+          <div className="vaccineSvg">
+            <MdOutlineVaccines size={30} />
           </div>
-          <p className="navDate">HISTORICAL LOG</p>
+          <div className="hisnav">
+            <h2 className="historynavh2">Request History</h2>
+            <p className="navDate">HISTORICAL LOG</p>
+          </div>
+
           <div className="historicalSearchBar">
             <p>Search by ID, Submitter or Item...</p>
           </div>
@@ -16,7 +26,13 @@ const History = () => {
         <div className="app-layout">
           <aside className="sidebar">
             <div className="logo-box">
-              <img src="" alt="Logo" className="sidebar-icon" />
+              <MdDashboard size={25} color="#94A3B8;" />
+              <GoBellFill size={25} color="#94A3B8;" />
+              <LuArchive size={25} color="#94A3B8;" />
+              <GiBackwardTime size={25} color="#94A3B8;" />
+            </div>
+            <div className="navLogoSec">
+              <IoSettings size={25} color="#94A3B8;" />
             </div>
           </aside>
 

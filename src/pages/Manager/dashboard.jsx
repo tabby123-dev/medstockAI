@@ -1,29 +1,37 @@
 import React from "react";
-import './manager.css';
-import { IoIosSearch } from "react-icons/io";
+import "./manager.css";
 import { MdOutlineVaccines } from "react-icons/md";
-import { FaBoxArchive } from "react-icons/fa6";
 import { MdDashboard } from "react-icons/md";
-import { FaBell } from "react-icons/fa";
-import { RxCounterClockwiseClock } from "react-icons/rx";
-import { IoSettingsOutline } from "react-icons/io5";
-import { IoBagAdd } from "react-icons/io5";
-import { CgDanger } from "react-icons/cg";
+import { GoBellFill } from "react-icons/go";
+import { LuArchive } from "react-icons/lu";
+import { GiBackwardTime } from "react-icons/gi";
+import { IoSettings } from "react-icons/io5";
 
 const Manager = () => {
   return (
     <>
       <div className="body">
         <nav className="nav-links">
-          <div>
-            <h2 className="navoversight">Oversight</h2>
+          <div className="vaccineSvg">
+            <MdOutlineVaccines size={30} />
           </div>
-          <p className="navDate">Monday, 24 May 2024</p>
+          <div className="navadjustment">
+            <div>
+              <h2 className="navoversight">Oversight</h2>
+            </div>
+            <p className="navDate">Monday, 24 May 2024</p>
+          </div>
         </nav>
         <div className="app-layout">
           <aside className="sidebar">
             <div className="logo-box">
-              <img src="" alt="Logo" className="sidebar-icon" />
+              <MdDashboard size={25} color="#94A3B8;" />
+              <GoBellFill size={25} color="#94A3B8;" />
+              <LuArchive size={25} color="#94A3B8;" />
+              <GiBackwardTime size={25} color="#94A3B8;" />
+            </div>
+            <div className="navLogoSec">
+              <IoSettings size={25} color="#94A3B8;" />
             </div>
           </aside>
 
